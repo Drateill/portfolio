@@ -1,0 +1,83 @@
+@import "../../style/breakpoints";
+@import "../../style/colors";
+@import "../../style/dimensions";
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: $menu__height;
+  width: 100%;
+
+  @media (min-width: $md) {
+    left: 10%;
+    top: 0rem;
+    width: 80%;
+  }
+
+  &__primary,
+  &__secondary {
+    display: flex;
+    justify-content: space-around;
+    height: 2rem;
+    text-align: center;
+  }
+
+  &__primary {
+    width: 100%;
+
+    @media (min-width: $md) {
+      width: 80%;
+    }
+
+    &__link {
+      text-decoration: none;
+    }
+
+    &__caption {
+      display: none;
+
+      @media (min-width: $md) {
+        display: initial;
+        font-variant: small-caps;
+      }
+    }
+  }
+
+  &__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    @media (min-width: $md) {
+      display: none;
+    }
+  }
+
+  &__secondary {
+    order: -1;
+    width: 80%;
+
+    @media (min-width: $md) {
+      order: 1;
+      width: 50%;
+    }
+
+    &__social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      background-color: whitesmoke;
+
+      &__icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        padding: 0.25rem;
+      }
+    }
+  }
+}

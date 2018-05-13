@@ -1,0 +1,34 @@
+// STYLE GLOBAL
+@import "breakpoints";
+@import "colors";
+@import "dimensions";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: $home__background-color;
+  font-family: "Helvetica Neue", arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // background-image: url(../../assets/img/sakura.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+
+  @media (min-width: $md) {
+    margin-top: $menu__height;
+  }
+}

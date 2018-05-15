@@ -47,6 +47,10 @@ h1 {
     color:$footer__color--hover;
     animation: letter-change 5s infinite both alternate linear; 
   }
+
+  @media (max-width:$sm) {
+    font-size: 1.5rem;
+  }
 }
 
 @keyframes letter-change {

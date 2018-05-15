@@ -28,7 +28,13 @@ body {
   height: 100%;
   background: #ECE9E6; 
   background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-  }
+}
+
+main {
+  height: calc(100vh - 6rem);
+  overflow-y: hidden;
+}
+
 
 h1 {
   font-family: 'Julius Sans One', sans-serif;

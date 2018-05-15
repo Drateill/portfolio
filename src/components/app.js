@@ -31,8 +31,9 @@ class App extends Component {
             <LiquidRoute animator={PushAndSlide} path="/" component={Home}/>
             <LiquidRoute animator={PushAndSlide} path="/realisations" component={Realisations}/>
           </Router>
-          <Footer />
+
         </div>
+        <Footer />
       </div>
     );
   }

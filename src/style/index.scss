@@ -33,9 +33,23 @@ body {
 main {
   height: calc(100vh - 6rem);
   overflow-y: hidden;
+  padding-top:2rem;
 }
 
 
 h1 {
   font-family: 'Julius Sans One', sans-serif;
+  span{
+    color:$footer__color--hover;
+    animation: letter-change 5s infinite both alternate linear; 
+  }
+}
+
+@keyframes letter-change {
+  0%{
+    color: $animation__blue;
+  }
+  100%{
+    color: $animation__purple;
+  }
 }

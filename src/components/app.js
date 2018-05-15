@@ -2,6 +2,8 @@ import { h, Component } from "preact";
 import { Router } from "preact-router";
 
 import Menu from "./Menu";
+import Footer from "./Footer";
+
 import Home from "../routes/home";
 import Realisations from "../routes/Realisations";
 
@@ -23,6 +25,7 @@ class App extends Component {
             <Home path="/" />
             <Realisations path="/realisations" />
           </Router>
+          <Footer />
         </div>
       </div>
     );

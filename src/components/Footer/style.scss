@@ -1,3 +1,39 @@
 @import "../../style/breakpoints";
 @import "../../style/colors";
-@import "../../style/dimensions";
+
+.footer {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  left:0;
+  bottom:0;
+  display:flex;
+  justify-content: center;
+
+  &__link {
+    height: 2rem;
+    width: 2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    border: 2px solid $footer__color;
+    margin: 0.5rem;
+
+    &:hover {
+      border: 2px solid $footer__color--hover;
+    }
+
+    &:hover .footer__icon {
+      fill:$footer__color--hover;
+    }
+  }
+
+  &__icon {
+    margin: 0.5rem;
+    height:2rem;
+    width: 2rem;
+    fill: $footer__color;
+  }
+}
+

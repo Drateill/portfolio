@@ -1,39 +1,94 @@
 @import "../../style/breakpoints";
 @import "../../style/colors";
 
+.menu-container {
+  width: 100%;
+  animation: color-change-2x 5s linear infinite alternate both;
+  
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: #227093;
+  }
+  100% {
+    background: #2c2c54;
+  }
+}
+
 .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 3rem;
-  padding: 0.2rem;
   position: relative;
   width: 100%;
   max-width: 1000px;
   margin: auto;
 
-  &:after {
-    content: "";
-    position: absolute;
-    left: 25%;
-    bottom: 0;
-    width: 50%;
-    height: 0.05rem;
-    background: $border__color;
+  @media (max-width:$sm) {
+    padding-left:0.5rem;
+    padding-right:0.5rem;
   }
 
   &__link {
-    color: $border__color;
-
+    color: $white;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     font-variant: small-caps;
-    height: 2rem;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    transition: transform 0.25s ease;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 1%;
+      height: 2px;
+      transform: scaleX(1);
+      position: absolute;
+      top: 0.5rem;
+      left: 0;
+      background-color: $white;
+      transform-origin: top left;
+      opacity: 0;
+      transition: transform 0.5s cubic-bezier(1,.06,.41,.87);
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 1%;
+      height: 2px;
+      transform: scaleX(1);
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0;
+      background-color: $white;
+      transform-origin: top left;
+      opacity: 0;
+      transition: transform 0.5s cubic-bezier(1,.06,.41,.87);
+    }
 
     &:hover {
-      color: $border__color;
+      color: $white;
       text-decoration: none;
+
+      &::before{
+        transform: scaleX(100);
+        opacity: 1;
+      }
+
+      &::after{
+        transform: scaleX(-100);
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      transform: scale(1.05);
     }
 
     @media (max-width: $xxs) {

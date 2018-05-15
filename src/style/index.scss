@@ -33,7 +33,11 @@ body {
 main {
   height: calc(100vh - 6rem);
   overflow-y: hidden;
-  padding-top:2rem;
+  padding-top:1rem;
+  
+  @media (max-height: 600px) {
+    height: 70vh;
+  }
 }
 
 

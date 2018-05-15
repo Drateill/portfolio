@@ -19,6 +19,7 @@
     border-radius:50%;
     border: 2px solid $footer__color;
     margin: 0.5rem;
+    transition: border 0.5s ease;
 
     &:hover {
       border: 2px solid $footer__color--hover;
@@ -33,6 +34,7 @@
     margin: 0.5rem;
     height:2rem;
     width: 2rem;
+    transition: fill 0.5s ease;
     fill: $footer__color;
   }
 }

@@ -12,12 +12,15 @@
   "eslintConfig": {
     "extends": "eslint-config-synacor"
   },
-  "eslintIgnore": ["build/*"],
+  "eslintIgnore": [
+    "build/*"
+  ],
   "devDependencies": {
     "eslint": "^4.9.0",
     "eslint-config-synacor": "^2.0.2",
     "identity-obj-proxy": "^3.0.0",
     "if-env": "^1.0.0",
+    "liquid-route": "^1.0.1",
     "node-sass": "^4.9.0",
     "preact-cli": "^2.1.0",
     "sass-loader": "^7.0.1"

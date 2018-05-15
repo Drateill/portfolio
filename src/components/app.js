@@ -1,6 +1,11 @@
 import { h, Component } from "preact";
 import { Router } from "preact-router";
 
+import LiquidRoute, { PushAndSlide } from 'liquid-route';
+import 'liquid-route/style.css';
+
+
+
 import Menu from "./Menu";
 import Footer from "./Footer";
 
@@ -17,13 +22,14 @@ class App extends Component {
   };
 
   render() {
+    console.dir(PushAndSlide)
     return (
       <div id="app">
         <Menu />
-        <div class="container-fluid">
+        <div class="container">
           <Router onChange={this.handleRoute}>
-            <Home path="/" />
-            <Realisations path="/realisations" />
+            <LiquidRoute animator={PushAndSlide} path="/" component={Home}/>
+            <LiquidRoute animator={PushAndSlide} path="/realisations" component={Realisations}/>
           </Router>
           <Footer />
         </div>

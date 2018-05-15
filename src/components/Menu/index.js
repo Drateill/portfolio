@@ -1,64 +1,26 @@
-import { h } from "preact";
+import preact from "preact";
 import { Link } from "preact-router/match";
 import style from "./style";
 
-const Menu = () => (
-  <nav class={style.menu}>
-    <Link activeClassName={style.active} class={style.menu__link} href="/">
-      <svg
-        class={style.menu__icon}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 576 512"
-      >
-        <path d="M488 312.7V456c0 13.3-10.7 24-24 24H348c-6.6 0-12-5.4-12-12V356c0-6.6-5.4-12-12-12h-72c-6.6 0-12 5.4-12 12v112c0 6.6-5.4 12-12 12H112c-13.3 0-24-10.7-24-24V312.7c0-3.6 1.6-7 4.4-9.3l188-154.8c4.4-3.6 10.8-3.6 15.3 0l188 154.8c2.7 2.3 4.3 5.7 4.3 9.3zm83.6-60.9L488 182.9V44.4c0-6.6-5.4-12-12-12h-56c-6.6 0-12 5.4-12 12V117l-89.5-73.7c-17.7-14.6-43.3-14.6-61 0L4.4 251.8c-5.1 4.2-5.8 11.8-1.6 16.9l25.5 31c4.2 5.1 11.8 5.8 16.9 1.6l235.2-193.7c4.4-3.6 10.8-3.6 15.3 0l235.2 193.7c5.1 4.2 12.7 3.5 16.9-1.6l25.5-31c4.2-5.2 3.4-12.7-1.7-16.9z" />
-      </svg>
-      <span class={style.menu__caption}>accueil</span>
-    </Link>
-
-    <Link activeClassName={style.active} class={style.menu__link} href="/">
-      <svg
-        class={style.menu__icon}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
-      >
-        <path d="M466.27 286.69C475.04 271.84 480 256 480 236.85c0-44.015-37.218-85.58-85.82-85.58H357.7c4.92-12.81 8.85-28.13 8.85-46.54C366.55 31.936 328.86 0 271.28 0c-61.607 0-58.093 94.933-71.76 108.6-22.747 22.747-49.615 66.447-68.76 83.4H32c-17.673 0-32 14.327-32 32v240c0 17.673 14.327 32 32 32h64c14.893 0 27.408-10.174 30.978-23.95 44.509 1.001 75.06 39.94 177.802 39.94 7.22 0 15.22.01 22.22.01 77.117 0 111.986-39.423 112.94-95.33 13.319-18.425 20.299-43.122 17.34-66.99 9.854-18.452 13.664-40.343 8.99-62.99zm-61.75 53.83c12.56 21.13 1.26 49.41-13.94 57.57 7.7 48.78-17.608 65.9-53.12 65.9h-37.82c-71.639 0-118.029-37.82-171.64-37.82V240h10.92c28.36 0 67.98-70.89 94.54-97.46 28.36-28.36 18.91-75.63 37.82-94.54 47.27 0 47.27 32.98 47.27 56.73 0 39.17-28.36 56.72-28.36 94.54h103.99c21.11 0 37.73 18.91 37.82 37.82.09 18.9-12.82 37.81-22.27 37.81 13.489 14.555 16.371 45.236-5.21 65.62zM88 432c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z" />
-      </svg>
-      <span class={style.menu__caption}>compétences</span>
-    </Link>
-
-    <Link activeClassName={style.active} class={style.menu__link} href="/">
-      <svg
-        class={style.menu__icon}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 576 512"
-      >
-        <path d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z" />
-      </svg>
-      <span class={style.menu__caption}>créations</span>
-    </Link>
-
-    <Link activeClassName={style.active} class={style.menu__link} href="/">
-      <svg
-        class={style.menu__icon}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 288 512"
-      >
-        <path d="M288 176c0-79.5-64.5-144-144-144S0 96.5 0 176c0 68.5 47.9 125.9 112 140.4V368H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h36v36c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-36h36c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-36v-51.6c64.1-14.5 112-71.9 112-140.4zm-224 0c0-44.1 35.9-80 80-80s80 35.9 80 80-35.9 80-80 80-80-35.9-80-80z" />
-      </svg>
-      <span class={style.menu__caption}>à propos</span>
-    </Link>
-
-    <Link activeClassName={style.active} class={style.menu__link} href="/">
-      <svg
-        class={style.menu__icon}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
-      >
-        <path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z" />
-      </svg>
-      <span class={style.menu__caption}>contact</span>
-    </Link>
-  </nav>
-);
+class Menu extends preact.Component {
+  render() {
+    return (
+      <nav class={style.menu}>
+        <Link activeClassName={style.active} class={style.menu__link} href="/">
+          accueil
+        </Link>
+        <Link activeClassName={style.active} class={style.menu__link} href="/competences">
+          compétences
+        </Link>
+        <Link activeClassName={style.active} class={style.menu__link} href="/realisations">
+          réalisations
+        </Link>
+        <Link activeClassName={style.active} class={style.menu__link} href="/contact">
+          contact
+        </Link>
+      </nav>
+    );
+  }
+}
 
 export default Menu;

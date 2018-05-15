@@ -16,7 +16,6 @@ class App extends Component {
   render() {
     return (
       <div id="app">
-        <Menu />
         <div class="container-fluid">
           <Router onChange={this.handleRoute}>
             <Home path="/" />

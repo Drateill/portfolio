@@ -11,6 +11,8 @@ import Footer from "./Footer";
 
 import Home from "../routes/home";
 import Realisations from "../routes/Realisations";
+import Contact from "../routes/contact";
+
 
 if (module.hot) {
   require("preact/debug");
@@ -30,6 +32,8 @@ class App extends Component {
           <Router onChange={this.handleRoute}>
             <LiquidRoute animator={PushAndSlide} path="/" component={Home}/>
             <LiquidRoute animator={PushAndSlide} path="/realisations" component={Realisations}/>
+            <LiquidRoute animator={PushAndSlide} path="/contact" component={Contact}/>
+
           </Router>
 
         </div>

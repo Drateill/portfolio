@@ -32,7 +32,7 @@ body {
 
 main {
   height: calc(100vh - 6rem);
-  overflow-y: hidden;
+  overflow: hidden;
   padding-top:1rem;
   
   @media (max-height: 600px) {
@@ -43,6 +43,7 @@ main {
 
 h1 {
   font-family: 'Julius Sans One', sans-serif;
+  margin-bottom:2rem;
   span{
     color:$footer__color--hover;
     animation: letter-change 5s infinite both alternate linear; 
@@ -50,6 +51,7 @@ h1 {
 
   @media (max-width:$sm) {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
 

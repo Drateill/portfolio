@@ -12,3 +12,19 @@
   margin-top:10%;
   color: $animation__purple;
 }
+
+.button {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin-right:0.5rem;
+  }
+
+  .button-icon {
+  width: 2rem;
+  fill: $white;
+  }
+}
+

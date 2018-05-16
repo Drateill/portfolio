@@ -44,6 +44,7 @@ main {
 h1 {
   font-family: 'Julius Sans One', sans-serif;
   margin-bottom:2rem;
+  text-align: center;
   span{
     color:$footer__color--hover;
     animation: letter-change 5s infinite both alternate linear; 

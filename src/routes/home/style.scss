@@ -1,8 +1,14 @@
+@import "../../style/breakpoints";
+@import "../../style/colors";
+
+
 .photo {
   border-radius: 50%;
 }
 
-h2{
+.title{
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5rem;
+  margin-top:10%;
+  color: $animation__purple;
 }

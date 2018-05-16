@@ -1,0 +1,39 @@
+@import "../../style/colors";
+
+.form{
+ 
+  margin-top:2rem;
+  font-family: 'Julius Sans One', sans-serif;
+  
+  .name,
+  .mail,
+  .message { 
+    background-color: transparent;
+    margin-bottom:1rem;
+    width:100%;
+    border: none;
+    border-bottom: 1px solid $animation__blue;
+    font-size: 0.9rem;
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .button {
+    animation: color-change-2x 5s linear infinite alternate both;
+    color: $white;
+    font-size: 0.9rem;
+  }
+
+  @keyframes color-change-2x {
+    0% {
+      background: $animation__blue;
+    }
+    100% {
+      background: $animation__purple;
+    }
+  }
+}
+
+
+

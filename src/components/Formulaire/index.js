@@ -4,20 +4,15 @@ import style from "./style";
 
 const Formulaire = () => (
   
-  <form>
-    <div class="form-group">
+  <form class={style.form}>
 
-      <label for="name">Votre Nom :</label>
-      <input class="form-control" type="text" placeholder="Name" />
+      <input type="text" class={style.name} placeholder="Votre Nom" />
 
-      <label for="mail">Votre adresse E-Mail :</label>
-      <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="E-Mail" />  
+      <input type="email" class={style.mail} placeholder="Votre adresse E-Mail" />  
 
-      <label for="message">Votre message :</label>
-      <textarea class="form-control" rows="3" placeholder=" Vous : 'Vous sembez tellement douée et fantaisiste que je souhaite vous prendre dans mon équipe de super dev!'"></textarea>
+      <textarea class={style.message} rows="3" placeholder=" Vous : 'Vous sembez tellement douée et fantaisiste que je souhaite vous prendre dans mon équipe de super dev!'"></textarea>
       
-      <button type="button" class="btn btn-dark btn-lg btn-block">Envoyez votre message</button>
-    </div>
+      <button type="button" class={"btn btn-lg btn-block " + style.button}>Envoyez votre message</button>
   
   </form>
  

@@ -14,9 +14,16 @@
 }
 
 .button {
-  display:flex;
+  animation: color-change-2x 5s linear infinite alternate both;
   align-items: center;
+  display:flex;
   justify-content: center;
+  height: 3rem;
+
+
+  &:focus {
+    outline-style: none;
+  }
 
   span {
     margin-right:0.5rem;
@@ -25,6 +32,15 @@
   .button-icon {
   width: 2rem;
   fill: $white;
+  }
+
+  @keyframes color-change-2x {
+    0% {
+      background: $animation__blue;
+    }
+    100% {
+      background: $animation__purple;
+    }
   }
 }
 

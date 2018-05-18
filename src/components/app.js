@@ -28,15 +28,17 @@ class App extends Component {
     return (
       <div id="app">
         <Menu />
+
         <div class="container">
           <Router onChange={this.handleRoute}>
             <LiquidRoute animator={PushAndSlide} path="/" component={Home}/>
+
             <LiquidRoute animator={PushAndSlide} path="/realisations" component={Realisations}/>
+
             <LiquidRoute animator={PushAndSlide} path="/contact" component={Contact}/>
-
           </Router>
-
         </div>
+
         <Footer />
       </div>
     );

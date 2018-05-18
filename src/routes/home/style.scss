@@ -2,15 +2,44 @@
 @import "../../style/colors";
 
 
-.photo {
-  border-radius: 50%;
+.presentation {
+  @media (min-width: $md) {
+    display: flex;
+
+    &__photo-container {
+      flex-basis: 50%;
+    }
+
+    &__text {
+      flex-basis: 50%;
+    }
+  }
+
+
+  &__photo-border {
+    flex-basis: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 135px;
+    margin: auto;
+    height: 135px;
+    background: linear-gradient(to bottom, $animation__blue, $animation__purple);
+  }
+
+  &__photo {
+    border-radius: 50%;
+    width: 90%;
+  }
 }
 
-.title{
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.5rem;
-  margin-top:10%;
-  color: $animation__purple;
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .button {
@@ -24,6 +53,9 @@
   border: none;
   border-radius: 10% 0 10% 0;
 
+  &:first-of-type {
+    margin-right: 1rem;
+  }
 
   &:focus {
     outline-style: none;

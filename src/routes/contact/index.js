@@ -5,6 +5,7 @@ import Formulaire from "../../components/Formulaire";
 
 const Contact = () => (
   <main>
+    <h3>prenons contact!</h3>
     <Formulaire />
   </main>
 

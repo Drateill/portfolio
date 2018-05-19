@@ -8,7 +8,7 @@ const Formulaire = () => (
 
     <input type="email" class={style.mail} placeholder="Votre adresse E-Mail" />  
 
-    <textarea class={style.message} rows="3" placeholder=" Vous : 'Vous sembez tellement douée et fantaisiste que je souhaite vous prendre dans mon équipe de super dev!'"></textarea>
+    <textarea class={style.message} rows="5" placeholder=" Vous : 'Vous sembez tellement douée, créative et géniale que mon équipe de super dev' ne saurait se passer de vous!"></textarea>
     
     <button type="button" class={style.button}>Envoyez votre message</button>
   </form>

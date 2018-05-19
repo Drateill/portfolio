@@ -10,6 +10,7 @@ import Menu from "./Menu";
 import Footer from "./Footer";
 
 import Home from "../routes/home";
+import Competences from "../routes/competences";
 import Realisations from "../routes/realisations";
 import Contact from "../routes/contact";
 
@@ -32,6 +33,8 @@ class App extends Component {
         <div class="container">
           <Router onChange={this.handleRoute}>
             <LiquidRoute animator={PushAndSlide} path="/" component={Home}/>
+
+            <LiquidRoute animator={PushAndSlide} path="/competences" component={Competences}/>
 
             <LiquidRoute animator={PushAndSlide} path="/realisations" component={Realisations}/>
 

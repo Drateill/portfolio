@@ -17,16 +17,16 @@
     justify-content: center;
     align-items: center;
     border-radius:50%;
-    border: 2px solid $footer__color;
+    border: 2px solid $grey__porcelain;
     margin: 0.5rem;
     transition: border 0.5s ease;
 
     &:hover {
-      border: 2px solid $footer__color--hover;
+      border: 2px solid $jackson__purple;
     }
 
     &:hover .footer__icon {
-      fill:$footer__color--hover;
+      fill:$jackson__purple;
     }
   }
 
@@ -35,7 +35,7 @@
     height:2rem;
     width: 2rem;
     transition: fill 0.5s ease;
-    fill: $footer__color;
+    fill: $grey__porcelain;
   }
 }
 

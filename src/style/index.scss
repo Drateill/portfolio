@@ -69,7 +69,7 @@ h1 {
   }
 
   span{
-    color:$footer__color--hover;
+    color:$jackson__purple;
     animation: color-change 5s infinite both alternate linear; 
   }
 
@@ -90,19 +90,18 @@ h2 {
 
 @keyframes color-change {
   0%{
-    color: $animation__blue;
+    color: $devil__blue;
   }
   100%{
-    color: $animation__purple;
+    color: $lucky__point;
   }
 }
 
 @keyframes background-color-change {
   0%{
-    background-color: $animation__blue;
+    background: $devil__blue;
   }
-
   100%{
-    background-color: $animation__purple;
+    background: $lucky__point;
   }
 }

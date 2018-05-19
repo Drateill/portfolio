@@ -26,7 +26,7 @@
     width: 135px;
     margin: auto;
     height: 135px;
-    background: linear-gradient(to bottom, $animation__blue, $animation__purple);
+    background: linear-gradient(to bottom, $desert, $jackson__purple);
   }
 
   &__photo {
@@ -72,10 +72,10 @@
 
   @keyframes color-change-2x {
     0% {
-      background: $animation__blue;
+      background: $eye__of__newt;
     }
     100% {
-      background: $animation__purple;
+      background: $lucky__point;
     }
   }
 }

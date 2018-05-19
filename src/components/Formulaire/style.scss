@@ -12,7 +12,7 @@
     margin-bottom:1rem;
     width:100%;
     border: none;
-    border-bottom: 1px solid $animation__blue;
+    border-bottom: 1px solid $devil__blue;
     font-size: 0.9rem;
     &:focus {
       outline: 0;
@@ -26,11 +26,11 @@
   }
 
   @keyframes color-change-2x {
-    0% {
-      background: $animation__blue;
+    0%{
+      color: $devil__blue;
     }
-    100% {
-      background: $animation__purple;
+    100%{
+      color: $lucky__point;
     }
   }
 }
